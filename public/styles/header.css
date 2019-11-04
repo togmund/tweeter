@@ -2,17 +2,13 @@
  * Navbar layout stuff
  */
 
- nav {
-  z-index: top; /* Not sure this works? */
-  position: sticky;
-  top: 0;
-  height: 120px;
-  width: 100vw;
-  background-color: #4056A1;
-  padding: 1.5em;
-  color: #FFFFFF;
-}
-
-nav span {
-  font-family: 'Bungee', sans-serif;
+ header {
+  /* z-index: top; */
+  /* position: sticky; */
+  /* top: 0; */
+  height: 400px;
+  width: 100%;
+  /* background-color: #4056A1; */
+  /* padding: 1.5em; */
+  /* color: #FFFFFF; */
 }
