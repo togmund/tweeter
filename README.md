@@ -15,3 +15,17 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Font Info
+
+Embed Font
+To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document:
+  - STANDARD 
+```
+<link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+```
+  - CSS:
+```
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Bungee', cursive;
+```
