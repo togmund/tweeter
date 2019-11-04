@@ -1,18 +1,26 @@
 /*
- * Navbar layout stuff
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
  */
 
- nav {
-  z-index: top; /* Not sure this works? */
-  position: sticky;
-  top: 0;
-  height: 120px;
-  width: 100vw;
-  background-color: #4056A1;
-  padding: 1.5em;
-  color: #FFFFFF;
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav span {
-  font-family: 'Bungee', sans-serif;
-}
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */

@@ -21,3 +21,9 @@ order|relating to|examples
 8|material|padding
 9|type|font, color
 10|purpose|
+
+<!-- The header should have a height of 400px and be 100% the width of it's parent container
+The avatar should be centered vertically and horizontally (Hint: you may have to play around with position: relative and position: absolute to properly position the avatar)
+The name should be centered below the avatar
+The background should be a different colour than the nav and the body
+The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/ -->
