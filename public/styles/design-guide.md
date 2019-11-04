@@ -16,5 +16,4 @@ Tip: add a bunch of empty or placeholder lines or paragraphs to the body so you 
 Be 120 pixels in height
 Be the full width of the viewport.
 Have a z-index that means the nav will always be stacked on top
-The <span> within the <nav> has Bungee as it's default font-family
 The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges -->

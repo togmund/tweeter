@@ -5,5 +5,8 @@
 nav {
   color: #FFFFFF;
   background-color: #4056A1;
+}
+
+nav span {
   font-family: 'Bungee', sans-serif;
 }
