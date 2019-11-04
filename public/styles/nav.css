@@ -3,8 +3,13 @@
  */
 
 nav {
-  color: #FFFFFF;
+  z-index: top; /* Not sure this works? */
+  position: absolute;
+  height: 120px;
+  width: 100vw;
   background-color: #4056A1;
+  padding: 1.5em;
+  color: #FFFFFF;
 }
 
 nav span {

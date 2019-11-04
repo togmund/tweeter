@@ -8,12 +8,16 @@
   - ![#4056A1](https://placehold.it/15/#4056A1/000000?text=+) `#4056A1`
   - ![#FFFFFF](https://placehold.it/15/#FFFFFF/000000?text=+) `#FFFFFF`
 
-<!-- Style the Nav
-Change the appearance of the nav based on the following rules. The navbar should:
-
-Be fixed to the top.
-Tip: add a bunch of empty or placeholder lines or paragraphs to the body so you can see how it behaves when you scroll vertically.
-Be 120 pixels in height
-Be the full width of the viewport.
-Have a z-index that means the nav will always be stacked on top
-The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges -->
+## Order of Adjectives in CSS
+order|relating to|examples
+-|-|-
+1|opinion|position, z-index
+2|size|height, width
+3|physical quality|
+4|shape|
+5|age|
+6|color|background color
+7|origin|
+8|material|padding
+9|type|font, font-color
+10|purpose|
