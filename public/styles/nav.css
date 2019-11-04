@@ -1,12 +1,33 @@
-/* Style the Nav
-Change the appearance of the nav based on the following rules. The navbar should:
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-Be fixed to the top.
-Tip: add a bunch of empty or placeholder lines or paragraphs to the body so you can see how it behaves when you scroll vertically.
-Be 120 pixels in height
-Be the full width of the viewport.
-Have a z-index that means the nav will always be stacked on top
-Have #4056A1 as its default background colour.
-Have #FFFFF as its default font colour
-The <span> within the <nav> has Bungee as it's default font-family
-The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+nav {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
