@@ -7,15 +7,15 @@
   margin-right: auto;
 }
 .new-tweet textarea {
-  height: 2.25em;
+  height: 2em;
   width: 100%;
   display: block;
   resize:none;
   background-color: inherit;
-  border-color: transparent;
+  border:none;
   border-bottom-color: #545149;
   border-bottom-style: solid;
-  border-bottom-width: 0.2em;
+  border-bottom-width: 0.186em;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
