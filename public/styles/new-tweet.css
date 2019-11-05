@@ -1,0 +1,15 @@
+/*
+ * Navbar layout stuff
+ */
+
+.new-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-tweet input {
+  margin-left: 0;
+  background-color: #4056a1;
+  color: #ffffff;
+  font-family: 'Bungee', sans-serif;
+}
