@@ -15,6 +15,10 @@ $(document).ready(() => {
     $counter.text(maxTweetLength - newTweetLength);
     const counterValue = $counter.text();
 
+    // Set the color of the text to be red maybe?
+    $counter.toggleClass ('characterLimit', counterValue < 0 );
+    console.log(counterValue < 0);
+
   });
 
 });

@@ -34,3 +34,7 @@
   margin-top: 0.75em;
   font-family: 'Bungee', sans-serif;
 }
+
+.new-tweet .counter.characterLimit {
+  color: red;
+}
