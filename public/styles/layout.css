@@ -25,17 +25,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ body main {
    width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: inherit;
  }
 
- /* Style the main element so it conforms to the following rules:
 
-It should be only 90% of the width of its parent element
-It should be center aligned to the body
-It should have the same colour background as the <body> element
-Tip: Add some temporary content like paragraphs or headings into main to see how it flows and that it aligns well vertically. We recommend using one of these handy Lorem Ipsum generators if you're at a loss for words.
-
-Fix the content behind the nav
-
-Once you follow the tip above, you'll realize that the content within the <main> element is being clipped by the fixed header. How can you push it down with only a CSS change to the <main> element? */
+/* Once you follow the tip above, you'll realize that the content within the <main> element is being clipped by the fixed header. How can you push it down with only a CSS change to the <main> element? */
