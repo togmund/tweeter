@@ -1,19 +1,17 @@
 /*
- * Navbar layout stuff
+ * header layout stuff
  */
 
  header {
-  /* z-index: top; */
-  /* position: sticky; */
-  /* top: 0; */
   height: 400px;
   width: 100%;
   background-color: #98c1d9;
   background-image: url('../images/otis-redding.png');
-  /* padding: 1.5em; */
-  /* color: #FFFFFF; */
 }
 
 header .profile {
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

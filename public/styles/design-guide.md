@@ -25,8 +25,3 @@ order|relating to|examples
 8|material|padding
 9|type|font, color
 10|purpose|
-
-<!--
-The avatar should be centered vertically and horizontally (Hint: you may have to play around with position: relative and position: absolute to properly position the avatar)
-The name should be centered below the avatar
--->
