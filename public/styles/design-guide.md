@@ -6,11 +6,11 @@
 
 ## Color Pallete
   - [Full Pallete](https://coolors.co/4056a1-ffffff-98c1d9-f4f1ec-545149)
-    - ![#4056A1](https://placehold.it/15/#4056A1/000000?text=+) `#4056A1`
-    - ![#f4f1ec](https://placehold.it/15/#f4f1ec/000000?text=+) `#f4f1ec`
-    - ![#98c1d9](https://placehold.it/15/#98c1d9/000000?text=+) `#98c1d9`
-    - ![#FFFFFF](https://placehold.it/15/#FFFFFF/000000?text=+) `#FFFFFF`
-    - ![#545149](https://placehold.it/15/#545149/000000?text=+) `#545149`
+    - ![#4056A1](https://encycolorpedia.com/4056a1.svg)
+    - ![#f4f1ec](https://encycolorpedia.com/f4f1ec.svg)
+    - ![#98c1d9](https://encycolorpedia.com/98c1d9.svg)
+    - ![#FFFFFF](https://encycolorpedia.com/ffffff.svg)
+    - ![#545149](https://encycolorpedia.com/545149.svg)
 
 ## Order of Adjectives in CSS?
 order|relating to|examples
@@ -29,5 +29,4 @@ order|relating to|examples
 <!--
 The avatar should be centered vertically and horizontally (Hint: you may have to play around with position: relative and position: absolute to properly position the avatar)
 The name should be centered below the avatar
-The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/
 -->

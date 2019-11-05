@@ -9,14 +9,11 @@
   height: 400px;
   width: 100%;
   background-color: #98c1d9;
+  background-image: url('../images/otis-redding.png');
   /* padding: 1.5em; */
   /* color: #FFFFFF; */
 }
 
-header img {
-  position: relative;
-}
-
-header h2 {
+header .profile {
   position: relative;
 }
