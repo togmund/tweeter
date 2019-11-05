@@ -5,8 +5,12 @@
   - [Bungee](https://fonts.google.com/specimen/Bungee)
 
 ## Color Pallete
-  - ![#4056A1](https://placehold.it/15/#4056A1/000000?text=+) `#4056A1`
-  - ![#FFFFFF](https://placehold.it/15/#FFFFFF/000000?text=+) `#FFFFFF`
+  - [Full Pallete](https://coolors.co/4056a1-ffffff-98c1d9-f4f1ec-545149)
+    - ![#4056A1](https://placehold.it/15/#4056A1/000000?text=+) `#4056A1`
+    - ![#f4f1ec](https://placehold.it/15/#f4f1ec/000000?text=+) `#f4f1ec`
+    - ![#98c1d9](https://placehold.it/15/#98c1d9/000000?text=+) `#98c1d9`
+    - ![#FFFFFF](https://placehold.it/15/#FFFFFF/000000?text=+) `#FFFFFF`
+    - ![#545149](https://placehold.it/15/#545149/000000?text=+) `#545149`
 
 ## Order of Adjectives in CSS?
 order|relating to|examples
@@ -23,10 +27,7 @@ order|relating to|examples
 10|purpose|
 
 <!--
-The header should have a height of 400px
-be 100% the width of it's parent container
 The avatar should be centered vertically and horizontally (Hint: you may have to play around with position: relative and position: absolute to properly position the avatar)
 The name should be centered below the avatar
-The background should be a different colour than the nav and the body
 The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/
 -->
