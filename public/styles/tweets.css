@@ -1,11 +1,12 @@
 /*
- * New Tweet layout stuff
+ * Tweet layout stuff
  */
 
-.new-tweet {
+article.tweet {
   margin-left: auto;
   margin-right: auto;
 }
+
 .new-tweet textarea {
   height: 2em;
   width: 100%;
