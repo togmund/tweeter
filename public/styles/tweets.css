@@ -2,6 +2,13 @@
  * Tweet layout stuff
  */
 
+ /* // TODOs:
+ // Transparency on all elements
+ // break footer top-border to have gaps on left and right
+ // fix font size to match design
+ // fix spacing to match design doc
+ //  */
+
 article.tweet {
   margin-top: 40px;
   margin-left: auto;
