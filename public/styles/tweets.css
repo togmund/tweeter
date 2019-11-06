@@ -3,7 +3,6 @@
  */
 
  /* // TODOs:
- // Transparency on all elements
  // break footer top-border to have gaps on left and right
  // fix font size to match design
  // fix spacing to match design doc
@@ -13,12 +12,18 @@ article.tweet {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   width: 100%;
   background-color: #f4f1ec;
   border-color: #545149;
   border-style: solid;
   border-width: 0.186em;
+  opacity: 0.85;
+}
+
+article.tweet.hover {
+  opacity: 1;
+  box-shadow: 7px 7px rgba(152, 193, 217, 0.7);
 }
 
 article.tweet header {
@@ -35,8 +40,13 @@ article.tweet header .username {
   float: left;
 }
 article.tweet header .handle {
+  opacity: 0;
+  color: rgba(152, 193, 217, 0.7);
   margin: 10px;
   float: right;
+}
+article.tweet.hover header .handle {
+  opacity: inherit;
 }
 
 article.tweet div .tweet-body {
