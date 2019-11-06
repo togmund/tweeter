@@ -63,5 +63,13 @@ const createTweetElement = function (tweet) {
 }
 
 $(document).ready(() => {
+
   renderTweets(data);
+
+  $(".new-tweet").submit( function (event) {
+
+    event.preventDefault();
+    
+  })
+
 });
