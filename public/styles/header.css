@@ -2,14 +2,11 @@
  * header layout stuff
  */
 
- header {
+header.profile {
   height: 400px;
   width: 100%;
   background-color: #98c1d9;
   background-image: url('../images/otis-redding.png');
-}
-
-header .profile {
   display: block;
   margin-left: auto;
   margin-right: auto;

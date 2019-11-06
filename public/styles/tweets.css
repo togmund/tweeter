@@ -3,39 +3,55 @@
  */
 
 article.tweet {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #f4f1ec;
+  border-color: #545149;
+  border-style: solid;
+  border-width: 0.186em;
+}
+
+article.tweet header {
+  background-color: inherit;
+  display: inline-block;
+  width: 100%;
+}
+article.tweet header .photo {
+  margin: 10px;
+  float: left;
+}
+article.tweet header .username {
+  margin: 10px;
+  float: left;
+}
+article.tweet header .handle {
+  margin: 10px;
+  float: right;
+}
+
+article.tweet div .tweet-body {
+  display: block;
+  width: 95%;
+  resize:none;
   margin-left: auto;
   margin-right: auto;
 }
 
-.new-tweet textarea {
-  height: 2em;
+article.tweet footer{
+  border-top-color: #545149;
+  border-top-style: solid;
+  border-top-width: 0.186em;
+  display: inline-block;
   width: 100%;
-  display: block;
-  resize:none;
-  background-color: inherit;
-  border:none;
-  border-bottom-color: #545149;
-  border-bottom-style: solid;
-  border-bottom-width: 0.186em;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
 }
-
-.new-tweet input {
-  margin-top: 0.75em;
-  display: inline;
-  background-color: #4056a1;
-  color: #ffffff;
-  font-family: 'Bungee', sans-serif;
+article.tweet footer .age{
+  margin: 10px;
+  float: left;
 }
-
-.new-tweet .counter {
-  display: inline;
+article.tweet footer .icon{
+  margin: 10px;
   float: right;
-  margin-top: 0.75em;
-  font-family: 'Bungee', sans-serif;
-}
-
-.new-tweet .counter.characterLimit {
-  color: red;
 }
