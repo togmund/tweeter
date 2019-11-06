@@ -9,66 +9,68 @@
  //  */
 
 article.tweet {
+  opacity: 0.85;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  width: 100%;
-  background-color: #f4f1ec;
-  border-color: #545149;
   border-style: solid;
   border-width: 0.186em;
-  opacity: 0.85;
+  border-color: #545149;
+  width: 100%;
+  background-color: #f4f1ec;
 }
-
 article.tweet.hover {
   opacity: 1;
   box-shadow: 7px 7px rgba(152, 193, 217, 0.7);
 }
 
+
 article.tweet header {
-  background-color: inherit;
   display: inline-block;
   width: 100%;
+  background-color: inherit;
 }
-article.tweet header .photo {
-  margin: 10px;
+article.tweet header .avatar {
   float: left;
+  margin: 10px;
 }
 article.tweet header .username {
-  margin: 10px;
   float: left;
+  margin: 10px;
 }
 article.tweet header .handle {
-  opacity: 0;
-  color: rgba(152, 193, 217, 0.7);
-  margin: 10px;
   float: right;
+  opacity: 0;
+  margin: 10px;
+  color: rgba(152, 193, 217, 0.7);
 }
 article.tweet.hover header .handle {
   opacity: inherit;
 }
 
-article.tweet div .tweet-body {
+
+article.tweet div.tweet-body {
   display: block;
-  width: 95%;
-  resize:none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px;
+  width: 96%;
 }
 
-article.tweet footer{
+
+article.tweet footer {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   border-top-color: #545149;
   border-top-style: solid;
   border-top-width: 0.186em;
-  display: inline-block;
-  width: 100%;
+  width: 100%
 }
-article.tweet footer .age{
-  margin: 10px;
+article.tweet footer span {
   float: left;
-}
-article.tweet footer .icon{
   margin: 10px;
+}
+article.tweet footer a {
   float: right;
+  margin: 10px;
 }
