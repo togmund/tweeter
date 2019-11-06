@@ -22,7 +22,8 @@ const data = [
     "user": {
       "name": "Descartes",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
+      "handle": "@rd"
+    },
     "content": {
       "text": "Je pense , donc je suis"
     },
@@ -30,21 +31,37 @@ const data = [
   }
 ]
 
-const renderTweets = function(tweets) {
+const renderTweets = function (tweets) {
   // loops through tweets
-  for (let tweet in tweets) {
-  // calls createTweetElement for each tweet
-    createTweetElement(tweet);
+  for (const tweet of tweets) {
+    // calls createTweetElement for each tweet
+    // takes return value and appends it to the tweets container
+    $('.tweets-container').append(createTweetElement(tweet));
   }
-  // takes return value and appends it to the tweets container
 }
 
-const createTweetElement = function(tweet) {
-  let $tweet = $('<article>').addClass('tweet');
+const createTweetElement = function (tweet) {
+  let $tweet = `
+    <article class="tweet">
+      <header>
+        <img class="avatar" src=${tweet.user.avatars}>
+        <span class="username">${tweet.user.name}</span>
+        <span class="handle">${tweet.user.handle}</span>
+      </header>
+      <div class="tweet-body">
+        ${tweet.content.text}
+      </div>
+      <footer>
+        <span>${tweet.created_at}</span>
+        <a>#</a>
+        <a>%</a>
+        <a>&</a>
+      </footer>
+    </article>
+  `;
   return $tweet;
 }
 
-renderTweets(data);
-
-console.log(renderTweets(data));
-// $('#tweets-container').append($tweet);
+$(document).ready(() => {
+  renderTweets(data);
+});
