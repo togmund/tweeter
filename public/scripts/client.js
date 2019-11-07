@@ -50,10 +50,18 @@ $(document).ready(() => {
 
   $(".post-tweet").on("submit", function (event) {
     event.preventDefault();
-    $.ajax('/tweets', {
-      method: 'POST',
-      data: $(this).serialize()
-    });
-  });
 
+    if ($(".counter").text() == 140) {
+      alert("C'mon, type something!");
+    }
+    if ($(".counter").text() < 0) {
+      alert("Make that little red number in the bottom right not red.");
+    }
+    else {
+      $.ajax('/tweets', {
+        method: 'POST',
+        data: $(this).serialize()
+      });
+    }
+  });
 });
