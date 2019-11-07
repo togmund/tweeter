@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const escape =  function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -11,6 +11,7 @@ const escape =  function(str) {
 
 const renderTweets = function (tweets) {
   // loops through tweets
+  $('.tweets-container').empty()
   for (const tweet of tweets) {
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
@@ -65,13 +66,12 @@ $(document).ready(() => {
         method: 'POST',
         data: $(this).serialize()
       }).then(function () {
-        $(this).parents('.tweets-container').empty();
+        console.log($(this))
         loadTweets();
       }
       );
       $(this).children('textarea').val("");
       $(this).children('.counter').text(140);
-
     }
   });
 });
