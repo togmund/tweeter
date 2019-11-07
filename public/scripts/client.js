@@ -3,6 +3,11 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 const renderTweets = function (tweets) {
   // loops through tweets
@@ -17,15 +22,15 @@ const createTweetElement = function (tweet) {
   let $tweet = `
     <article class="tweet">
       <header>
-        <img class="avatar" src=${tweet.user.avatars}>
-        <span class="username">${tweet.user.name}</span>
-        <span class="handle">${tweet.user.handle}</span>
+        <img class="avatar" src=${escape(tweet.user.avatars)}>
+        <span class="username">${escape(tweet.user.name)}</span>
+        <span class="handle">${escape(tweet.user.handle)}</span>
       </header>
       <div class="tweet-body">
-        ${tweet.content.text}
+        ${escape(tweet.content.text)}
       </div>
       <footer>
-        <span>${tweet.created_at}</span>
+        <span>${escape(tweet.created_at)}</span>
         <a>#</a>
         <a>%</a>
         <a>&</a>
@@ -34,6 +39,7 @@ const createTweetElement = function (tweet) {
   `;
   return $tweet;
 };
+
 
 $(document).ready(() => {
 
