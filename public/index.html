@@ -27,7 +27,14 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
+
+    <span class="logo">tweeter</span>
+
+    <span class="form-toggle">
+      <span>write a <span class="emphasis">new</span> tweet</span>
+      <button></button>
+    </span>
+
   </nav>
 
   <!-- Page-specific (main) content here -->
@@ -44,7 +51,6 @@
   <main class="container">
 
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
       <form class="post-tweet" method=POST action="/tweets" >
         <textarea name="text" placeholder="What are you humming about?"></textarea>
         <input name="submit" type="submit" value="tweet" >

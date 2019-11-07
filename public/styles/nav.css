@@ -11,8 +11,22 @@ nav {
   background-color: #4056A1;
   padding: 1.5em;
   color: #FFFFFF;
+  
 }
 
-nav span {
+nav span.logo {
   font-family: 'Bungee', sans-serif;
+  font-size: 1.5em;
+}
+
+nav .form-toggle {
+  float:right;
+}
+nav .form-toggle .emphasis {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+nav .form-toggle button {
+  display: block;
+  margin: auto;
 }

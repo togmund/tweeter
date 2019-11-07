@@ -3,6 +3,7 @@
  */
 
 .new-tweet {
+  margin-block-start: 2em;
   margin-left: auto;
   margin-right: auto;
 }
