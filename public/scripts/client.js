@@ -4,16 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Fake data taken from initial-tweets.json
-
 const renderTweets = function (tweets) {
   // loops through tweets
   for (const tweet of tweets) {
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
-    $('.tweets-container').append(createTweetElement(tweet));
+    $('.tweets-container').prepend(createTweetElement(tweet));
   }
-}
+};
 
 const createTweetElement = function (tweet) {
   let $tweet = `
@@ -35,7 +33,7 @@ const createTweetElement = function (tweet) {
     </article>
   `;
   return $tweet;
-}
+};
 
 $(document).ready(() => {
 
@@ -45,23 +43,29 @@ $(document).ready(() => {
     }).then(function (tweetData) {
       renderTweets(tweetData);
     });
-  }
+  };
   loadTweets();
 
   $(".post-tweet").on("submit", function (event) {
     event.preventDefault();
 
-    if ($(".counter").text() == 140) {
+    if ($(this).children(".counter").text() == 140) {
       alert("C'mon, type something!");
     }
-    if ($(".counter").text() < 0) {
+    if ($(this).children(".counter").text() < 0) {
       alert("Make that little red number in the bottom right not red.");
-    }
-    else {
+    } else {
       $.ajax('/tweets', {
         method: 'POST',
         data: $(this).serialize()
-      });
+      }).then(function () {
+        $(this).parents('.tweets-container').empty();
+        loadTweets();
+      }
+      );
+      $(this).children('textarea').val("");
+      $(this).children('.counter').text(140);
+
     }
   });
 });
