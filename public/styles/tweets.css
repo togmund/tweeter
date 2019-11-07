@@ -20,7 +20,7 @@ article.tweet {
   width: 100%;
   background-color: #f4f1ec;
 }
-article.tweet.hover {
+article.tweet:hover {
   opacity: 1;
   box-shadow: 7px 7px rgba(152, 193, 217, 0.7);
 }
@@ -45,7 +45,7 @@ article.tweet header .handle {
   margin: 10px;
   color: rgba(152, 193, 217, 0.7);
 }
-article.tweet.hover header .handle {
+article.tweet:hover header .handle {
   opacity: inherit;
 }
 
