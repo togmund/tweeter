@@ -8,7 +8,7 @@
  // fix spacing to match design doc
  //  */
 
-article.tweet {
+.tweet {
   opacity: 0.85;
   margin-top: 40px;
   margin-left: auto;
@@ -20,37 +20,37 @@ article.tweet {
   width: 100%;
   background-color: #f4f1ec;
 }
-article.tweet:hover {
+.tweet:hover {
   opacity: 1;
   box-shadow: 7px 7px rgba(152, 193, 217, 0.7);
 }
 
 
-article.tweet header {
+.tweet header {
   display: inline-block;
   width: 100%;
   background-color: inherit;
 }
-article.tweet header .avatar {
+.tweet header .avatar {
   float: left;
   margin: 10px;
 }
-article.tweet header .username {
+.tweet header .username {
   float: left;
   margin: 10px;
 }
-article.tweet header .handle {
+.tweet header .handle {
   float: right;
   opacity: 0;
   margin: 10px;
   color: rgba(152, 193, 217, 0.7);
 }
-article.tweet:hover header .handle {
+.tweet:hover header .handle {
   opacity: inherit;
 }
 
 
-article.tweet div.tweet-body {
+.tweet div.tweet-body {
   display: block;
   overflow-wrap: break-word;
   margin: 10px;
@@ -58,7 +58,7 @@ article.tweet div.tweet-body {
 }
 
 
-article.tweet footer {
+.tweet footer {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -67,11 +67,11 @@ article.tweet footer {
   border-top-width: 0.186em;
   width: 100%
 }
-article.tweet footer span {
+.tweet footer span {
   float: left;
   margin: 10px;
 }
-article.tweet footer a {
+.tweet footer a {
   float: right;
   margin: 10px;
 }
