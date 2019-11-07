@@ -26,7 +26,7 @@ nav .form-toggle .emphasis {
   font-weight: 700;
   font-size: 1.15em;
 }
-nav .form-toggle button {
+nav .form-toggle .iconify {
   display: block;
   margin: auto;
 }
