@@ -66,10 +66,12 @@ $(document).ready(() => {
 
   renderTweets(data);
 
-  $(".new-tweet").submit( function (event) {
-
+  $(".post-tweet").on("submit", function (event) {
     event.preventDefault();
-    
-  })
+    $.ajax('/tweets', {
+      method: 'POST',
+      data: $(this).serialize()
+    })
+  });
 
 });
