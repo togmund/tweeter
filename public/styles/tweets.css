@@ -52,6 +52,7 @@ article.tweet:hover header .handle {
 
 article.tweet div.tweet-body {
   display: block;
+  overflow-wrap: break-word;
   margin: 10px;
   width: 96%;
 }
