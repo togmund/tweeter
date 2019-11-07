@@ -66,12 +66,20 @@ $(document).ready(() => {
 
   renderTweets(data);
 
+  const loadTweets = function () {
+    $.ajax('/tweets', {
+      method: 'GET'
+    }).then(function (tweetData) { console.log(tweetData) });
+  }
+
+  loadTweets();
+
   $(".post-tweet").on("submit", function (event) {
     event.preventDefault();
     $.ajax('/tweets', {
       method: 'POST',
       data: $(this).serialize()
-    })
+    });
   });
 
 });
