@@ -74,4 +74,9 @@ $(document).ready(() => {
       $(this).children('.counter').text(140);
     }
   });
+
+  $(".form-toggle").on("click", function (event) {
+
+  })
+
 });

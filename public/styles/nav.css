@@ -19,14 +19,34 @@ nav span.logo {
   font-size: 1.5em;
 }
 
+
 nav .form-toggle {
   float:right;
 }
+
+nav .form-toggle:hover {
+  cursor: pointer;
+}
+
 nav .form-toggle .emphasis {
   font-weight: 700;
   font-size: 1.15em;
 }
+
 nav .form-toggle .iconify {
   display: block;
   margin: auto;
+}
+
+nav .form-toggle:hover .iconify {
+  animation-duration: 0.42s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
 }
