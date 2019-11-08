@@ -32,5 +32,10 @@ body {
    background-color: inherit;
  }
 
+ .emphasis {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+
 
 /* Once you follow the tip above, you'll realize that the content within the <main> element is being clipped by the fixed header. How can you push it down with only a CSS change to the <main> element? */

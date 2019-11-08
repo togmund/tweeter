@@ -11,4 +11,6 @@ header.profile {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-weight: 300;
+  color: #ffffff;
 }

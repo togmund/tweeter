@@ -20,22 +20,31 @@ const renderTweets = function (tweets) {
 };
 
 const createTweetElement = function (tweet) {
+  const userAvatar = escape(tweet.user.avatars)
+  const userName = escape(tweet.user.name)
+  const userHandle = escape(tweet.user.handle)
+  const tweetText = escape(tweet.content.text)
+  const tweetPostTime = new Date(0);
+  tweetPostTime.setSeconds(escape(tweet.created_at));
+
   let $tweet = `
     <article class="tweet">
       <header>
-        <img class="avatar" src=${escape(tweet.user.avatars)}>
-        <span class="username">${escape(tweet.user.name)}</span>
-        <span class="handle">${escape(tweet.user.handle)}</span>
+        <img class="avatar" src=${userAvatar}>
+        <span class="username">${userName}</span>
+        <span class="handle">${userHandle}</span>
       </header>
       <div class="tweet-body">
-        ${escape(tweet.content.text)}
+        ${tweetText}
       </div>
       <footer>
-        <span>${escape(tweet.created_at)}</span>
-        <a>#</a>
-        <a>%</a>
-        <a>&</a>
-      </footer>
+        <span>${tweetPostTime.toLocaleString("en-US", {timeZone: "America/Los_Angeles"})}</span>
+        <div class="tweet-actions">
+          <span class="iconify" data-icon="ant-design:flag-fill" data-inline="false"></span>
+          <span class="iconify" data-icon="emojione-monotone:clockwise-vertical-arrows" data-inline="false"></span>
+          <span class="iconify" data-icon="ant-design:heart-fill" data-inline="false"></span>
+        </div>
+        </footer>
     </article>
   `;
   return $tweet;

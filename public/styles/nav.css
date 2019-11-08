@@ -28,11 +28,6 @@ nav .form-toggle:hover {
   cursor: pointer;
 }
 
-nav .form-toggle .emphasis {
-  font-weight: 700;
-  font-size: 1.15em;
-}
-
 nav .form-toggle .iconify {
   display: block;
   margin: auto;

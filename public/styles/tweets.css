@@ -37,6 +37,7 @@
 }
 .tweet header .username {
   float: left;
+  font-size: 1.25em;
   margin: 10px;
 }
 .tweet header .handle {
@@ -59,19 +60,20 @@
 
 
 .tweet footer {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   border-top-color: #545149;
   border-top-style: solid;
   border-top-width: 0.186em;
-  width: 100%
+  width: 98%;
 }
 .tweet footer span {
-  float: left;
+  align-self: flex-start;
   margin: 10px;
 }
-.tweet footer a {
-  float: right;
+.tweet footer .tweet-actions svg {
   margin: 10px;
+  margin-right: 20px;
 }
