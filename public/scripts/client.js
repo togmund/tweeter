@@ -57,10 +57,10 @@ $(document).ready(() => {
     event.preventDefault();
 
     if ($(this).children(".counter").text() == 140) {
-      alert("C'mon, type something!");
+      $(this).children(".invalid-post").text("Too Short").slideDown();
     }
     if ($(this).children(".counter").text() < 0) {
-      alert("Make that little red number in the bottom right not red.");
+      $(this).children(".invalid-post").text("Too Long").slideDown();
     } else {
       $.ajax('/tweets', {
         method: 'POST',

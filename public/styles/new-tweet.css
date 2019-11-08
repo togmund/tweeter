@@ -29,8 +29,18 @@
   font-family: 'Bungee', sans-serif;
 }
 
+.new-tweet .invalid-post {
+  display: inline-block;
+  float: right;
+  margin-top: 0.75em;
+  margin-right: 1em;
+  margin-left: 1em;
+  font-family: 'Bungee', sans-serif;
+  color: red;
+}
+
 .new-tweet .counter {
-  display: inline;
+  display: inline-block;
   float: right;
   margin-top: 0.75em;
   font-family: 'Bungee', sans-serif;
