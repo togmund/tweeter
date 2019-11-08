@@ -7,7 +7,7 @@
 
 function timeSince(time) {
   if (Math.floor((time/1000)) < 5) {
-    return `${Math.floor((time/1000))} seconds ago`
+    return `now`
   } 
   if (Math.floor((time/1000)) < 60) {
     return `${Math.floor((time/1000))} seconds ago`
@@ -52,9 +52,11 @@ const createTweetElement = function (tweet) {
   let $tweet = `
     <article class="tweet">
       <header>
-        <img class="avatar" src=${userAvatar}>
-        <span class="username">${userName}</span>
-        <span class="handle">${userHandle}</span>
+        <div>
+          <img class="avatar" src=${userAvatar}>
+          <span class="username">${userName}</span>
+        </div>
+          <span class="handle">${userHandle}</span>
       </header>
       <div class="tweet-body">
         ${tweetText}

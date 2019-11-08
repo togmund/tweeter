@@ -32,16 +32,25 @@
   width: 100%;
   background-color: inherit;
 }
-.tweet header .avatar {
-  margin: 10px;
+.tweet header div {
+  display: flex;
+  align-items: baseline;
+  margin:2%;
 }
-.tweet header .username {
+.tweet header div .avatar {
+  margin: 5%;
+}
+.tweet header div .username {
   font-size: 1.25em;
-  margin: 10px;
+  margin-left:30px;
+  margin: auto;
+  white-space: nowrap;
 }
 .tweet header .handle {
   opacity: 0;
-  margin: 10px;
+  margin: auto;
+  margin-right: 15px;
+  white-space: nowrap;
   color: rgba(152, 193, 217, 0.7);
 }
 .tweet:hover header .handle {
@@ -52,7 +61,10 @@
 .tweet div.tweet-body {
   display: block;
   overflow-wrap: break-word;
-  margin: 10px;
+  font-weight: 700;
+  margin: 4%;
+  margin-top: 0%;
+  margin-bottom: 6%;
   width: 96%;
 }
 
@@ -69,9 +81,11 @@
 }
 .tweet footer span {
   align-self: flex-start;
+  font-size: 0.75em;
   margin: 10px;
 }
 .tweet footer .tweet-actions svg {
   margin: 10px;
   margin-right: 20px;
+  
 }
