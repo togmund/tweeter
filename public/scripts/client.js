@@ -76,10 +76,10 @@ $(document).ready(() => {
 
   $(".form-toggle").on("click", function (event) {
     if ($(".new-tweet").is(":visible")) {
-      $(".new-tweet").hide();
-    } 
+      $(".new-tweet").slideUp();
+    }
     else {
-      $(".new-tweet").show();
+      $(".new-tweet").slideDown();
       $(".new-tweet").children().children("textarea").focus();
     }
   })
