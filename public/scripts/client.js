@@ -66,7 +66,6 @@ $(document).ready(() => {
         method: 'POST',
         data: $(this).serialize()
       }).then(function () {
-        console.log($(this))
         loadTweets();
       }
       );
@@ -76,7 +75,12 @@ $(document).ready(() => {
   });
 
   $(".form-toggle").on("click", function (event) {
-    $(".post-tweet").children('textarea').focus()
+    if ($(".new-tweet").is(":visible")) {
+      $(".new-tweet").hide();
+    } 
+    else {
+      $(".new-tweet").show();
+      $(".new-tweet").children().children("textarea").focus();
+    }
   })
-
 });
