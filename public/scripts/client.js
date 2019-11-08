@@ -76,7 +76,7 @@ $(document).ready(() => {
   });
 
   $(".form-toggle").on("click", function (event) {
-
+    $(".post-tweet").children('textarea').focus()
   })
 
 });
