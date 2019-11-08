@@ -51,11 +51,12 @@ $(document).ready(() => {
       renderTweets(tweetData);
     });
   };
+
+  $(".new-tweet").hide()
   loadTweets();
 
   $(".post-tweet").on("submit", function (event) {
     event.preventDefault();
-
     if ($(this).children(".counter").text() == 140) {
       $(this).children(".invalid-post").text("Too Short").slideDown();
     }

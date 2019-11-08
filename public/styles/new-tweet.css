@@ -30,7 +30,7 @@
 }
 
 .new-tweet .invalid-post {
-  display: inline-block;
+  display: none;
   float: right;
   margin-top: 0.75em;
   margin-right: 1em;

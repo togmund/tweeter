@@ -16,8 +16,7 @@ $(document).ready(() => {
     const counterValue = $(this).siblings('.counter').text();
 
     // Cleary any Current Errors
-    $(this).siblings(".invalid-post").slideUp()
-    $(this).siblings(".invalid-post").text("")
+    $(this).siblings(".invalid-post").slideUp("fast")
 
     // Set the color of the text to be red when over the limit;
     $(this).siblings('.counter').toggleClass('characterLimit', counterValue < 0);
