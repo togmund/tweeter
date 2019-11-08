@@ -27,21 +27,19 @@
 
 
 .tweet header {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: inherit;
 }
 .tweet header .avatar {
-  float: left;
   margin: 10px;
 }
 .tweet header .username {
-  float: left;
   font-size: 1.25em;
   margin: 10px;
 }
 .tweet header .handle {
-  float: right;
   opacity: 0;
   margin: 10px;
   color: rgba(152, 193, 217, 0.7);

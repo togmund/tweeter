@@ -3,6 +3,30 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
+
+function timeSince(time) {
+  if (Math.floor((time/1000)) < 5) {
+    return `${Math.floor((time/1000))} seconds ago`
+  } 
+  if (Math.floor((time/1000)) < 60) {
+    return `${Math.floor((time/1000))} seconds ago`
+  } 
+  if (Math.floor((time/1000) / 60) < 60) {
+    return `${Math.floor((time/1000) / 60)} minutes ago`
+  } 
+  if (Math.floor((time/1000) / 60) / 60 < 24) {
+    return `${Math.floor((time/1000) / 60) / 60} hours ago`
+  } 
+  if (Math.floor(((time/1000) / 60) / 60 ) / 24 < 30) {
+    return `${Math.floor(((time/1000) / 60) / 60 ) / 24} days ago`
+  }
+  if (Math.floor((((time/1000) / 60) / 60 ) / 24 ) / 30 < 12 ) {
+    return `${Math.floor((((time/1000) / 60) / 60 ) / 24 ) / 30} months ago`
+  } 
+  return `${Math.floor((((((time/1000) / 60) / 60 ) / 24 ) / 30) / 12)} years ago`;
+}
+
 const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -24,9 +48,7 @@ const createTweetElement = function (tweet) {
   const userName = escape(tweet.user.name)
   const userHandle = escape(tweet.user.handle)
   const tweetText = escape(tweet.content.text)
-  const tweetPostTime = new Date(0);
-  tweetPostTime.setSeconds(escape(tweet.created_at));
-
+  const tweetPostTime = (Date.now() - escape(tweet.created_at) - 744000)
   let $tweet = `
     <article class="tweet">
       <header>
@@ -38,7 +60,7 @@ const createTweetElement = function (tweet) {
         ${tweetText}
       </div>
       <footer>
-        <span>${tweetPostTime.toLocaleString("en-US", {timeZone: "America/Los_Angeles"})}</span>
+        <span>${timeSince(tweetPostTime)}</span>
         <div class="tweet-actions">
           <span class="iconify" data-icon="ant-design:flag-fill" data-inline="false"></span>
           <span class="iconify" data-icon="emojione-monotone:clockwise-vertical-arrows" data-inline="false"></span>
