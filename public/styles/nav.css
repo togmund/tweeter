@@ -1,7 +1,7 @@
 /*
  * Navbar layout stuff
  */
-
+/* Mobile styles */
 nav {
   z-index: 1;
   position: sticky;
@@ -10,8 +10,7 @@ nav {
   width: 100vw;
   background-color: #4056A1;
   padding: 1.5em;
-  color: #FFFFFF;
-  
+  color: #FFFFFF; 
 }
 
 nav span.logo {
@@ -44,4 +43,13 @@ nav .form-toggle:hover .iconify {
 @keyframes bounce {
   0%   { transform: scale(1,1)      translateY(0); }
   10%  { transform: scale(1.1,.9)   translateY(0); }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+  nav {
+    background:none;
+  }
+
 }
