@@ -1,30 +1,27 @@
-// Set a maximum tweet length
-const maxTweetLength = 140
+/**
+ * Represents The maxiumum tweet length
+ * @constant
+ */
+const maxTweetLength = 140;
 
-// Wait until the document is ready to run scripts
+/**
+ * Wait for full document to load before running scripts
+ * @event
+ */
 $(document).ready(() => {
 
-  $(".new-tweet form textarea").on('keyup', function () {
+  /**
+   * Handles all actions triggered when keystrokes fire in the textarea of the tweet composition form
+   * @event
+   */
+  $(".new-tweet form textarea").on('keyup', function() {
 
-    // Get the text in the tweet area && the current tweet length
-    const newTweetLength = $(this).val().length;
+    const newTweetLength = $(this).val().length; // Current characters used in text box
+    $(this).siblings('.counter').text(maxTweetLength - newTweetLength); // Updates the user-facing counter on each keystroke
 
-
-
-    // Get the current counter
-    $(this).siblings('.counter').text(maxTweetLength - newTweetLength);
-    const counterValue = $(this).siblings('.counter').text();
-
-    // Cleary any Current Errors
-    $(this).siblings(".invalid-post").slideUp("fast")
-
-    // Set the color of the text to be red when over the limit;
-    $(this).siblings('.counter').toggleClass('characterLimit', counterValue < 0);
-
-    // Performance hit if it's global, shorter tree traversals with "this"
-    // Isolates to local pieces of the tree
-    // Web Components - Implemented in the browser - Super encapsulated
-
+    const counterValue = $(this).siblings('.counter').text(); // retrieves the live value of the counter
+    $(this).siblings(".invalid-post").slideUp("fast"); // dismisses the invalid submission prompt on each new keystroke
+    $(this).siblings('.counter').toggleClass('characterLimit', counterValue < 0); // set the color of the counter to red when past the tweet limit
   });
 
 });

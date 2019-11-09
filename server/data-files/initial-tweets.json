@@ -20,5 +20,27 @@
       "text": "Je pense , donc je suis"
     },
     "created_at": 1461113959088
+  },
+  {
+    "user": {
+      "name": "Kant",
+      "avatars": "https://i.imgur.com/73hZDYK.png"
+      ,
+      "handle": "@ImperativeMan"
+    },
+    "content": {
+      "text": "Do unto others..."
+    },
+    "created_at": 1461116232227
+  },
+  {
+    "user": {
+      "name": "Locke",
+      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "handle": "@randsafan" },
+    "content": {
+      "text": "Theft is murder"
+    },
+    "created_at": 1461113959089
   }
 ]

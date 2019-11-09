@@ -43,13 +43,5 @@ body main {
     width: 55%;
     margin-right:3%;
   }
-  header.profile {
-    position: sticky;
-    top: 39px;
-    float:left;
-    width: 36%;
-    margin-left:3%;
-    margin-top: 39px;
-    border-radius: 6px;
-  }
+
 }
