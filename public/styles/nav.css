@@ -51,7 +51,7 @@ nav .form-toggle:hover .iconify {
 @media only screen and (max-width: 620px) {
 
   nav {
-    color: #545149;
+    font-size: 0.5em;
   }
 
 }

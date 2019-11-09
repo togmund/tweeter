@@ -45,10 +45,11 @@ body main {
   }
   header.profile {
     position: sticky;
+    top: 39px;
     float:left;
     width: 36%;
     margin-left:3%;
-    margin-top: 40px;
+    margin-top: 39px;
     border-radius: 6px;
   }
 }
