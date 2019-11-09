@@ -3,7 +3,7 @@
  */
 
 /* Mobile Styles */
-header.profile {
+.profile {
   /* display: flex;
   flex-direction: column; */
   z-index: 0;
@@ -19,15 +19,21 @@ header.profile {
   color: #ffffff;
 }
 
-header.profile img {
-  margin-top: 2%;
+.profile img {
+  margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Desktop styles */
-@media only screen and (max-width: 768px) {
-  header.profile {
-    margin-top:auto;
+@media only screen and (max-width: 620px) {
+
+  .profile {
+    color: #545149;
   }
+
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 900px) {
+
 }

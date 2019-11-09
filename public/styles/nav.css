@@ -14,17 +14,16 @@ nav {
   width: 100vw;
   padding: 1.5em;
   color: #FFFFFF; 
+  white-space: nowrap;
 }
 
 nav span.logo {
   font-family: 'Bungee', sans-serif;
   font-size: 1.5em;
-  /* float: left; */
 }
 
-
-nav .form-toggle {
-  /* float:right; */
+nav .form-toggle:hover {
+  cursor: pointer;
 }
 
 nav .form-toggle:hover {
@@ -58,11 +57,11 @@ nav .form-toggle:hover .iconify {
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 900px) {
 
   nav {
     background-color: #4056A1;
-    margin-bottom:120px;
+    margin:0;
   }
 
 }
