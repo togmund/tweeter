@@ -4,21 +4,30 @@
 
 /* Mobile Styles */
 header.profile {
+  /* display: flex;
+  flex-direction: column; */
+  z-index: 0;
   height: 400px;
   width: 100%;
   background-color: #98c1d9;
   background-image: url('../images/otis-redding.png');
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top:-120px;
   text-align: center;
   font-weight: 300;
   color: #ffffff;
 }
 
+header.profile img {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Desktop styles */
-@media only screen and (min-width: 1024px) {
-
-
-
+@media only screen and (max-width: 768px) {
+  header.profile {
+    margin-top:auto;
+  }
 }

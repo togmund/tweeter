@@ -3,12 +3,15 @@
  */
 /* Mobile styles */
 nav {
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background:none;
+  margin-bottom:-120px;
+  z-index: 1000;
   position: sticky;
   top: 0;
   height: 120px;
   width: 100vw;
-  background-color: #4056A1;
   padding: 1.5em;
   color: #FFFFFF; 
 }
@@ -16,11 +19,12 @@ nav {
 nav span.logo {
   font-family: 'Bungee', sans-serif;
   font-size: 1.5em;
+  /* float: left; */
 }
 
 
 nav .form-toggle {
-  float:right;
+  /* float:right; */
 }
 
 nav .form-toggle:hover {
@@ -45,11 +49,20 @@ nav .form-toggle:hover .iconify {
   10%  { transform: scale(1.1,.9)   translateY(0); }
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 620px) {
 
   nav {
-    background:none;
+    color: #545149;
+  }
+
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 720px) {
+
+  nav {
+    background-color: #4056A1;
+    margin-bottom:120px;
   }
 
 }
